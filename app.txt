@@ -1,0 +1,27 @@
+// App.js
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import LoginPage from './LoginPage';
+import StudentPage from './StudentPage';
+import TeacherPage from './TeacherPage';
+import AdminPage from './AdminPage';
+
+function App() {
+  return (
+    <Router>
+      <Switch>
+        <Route path="/" exact component={LoginPage} />
+        <Route path="/student" component={StudentPage} />
+        <Route path="/teacher" component={TeacherPage} />
+        <Route path="/admin" component={AdminPage} />
+      </Switch>
+    </Router>
+  );
+}
+
+export default App;
+
+
+
+//////////////////////////////////////////////////////////////////////
+benesba lel switch tnajem tna7ih kan ma5damch
